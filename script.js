@@ -21,13 +21,13 @@ createApp({
       };
 
       // 実際のAPI URLに置き換えてください
-      const response = await axios.post('https://m3h-hajime-containerapp.jollyriver-96f47718.japaneast.azurecontainerapps.io/api/INSERT', param);
+      const response = await axios.post('https://m3h-hajime-vnetendpoint.salmonmushroom-ce85a467.japaneast.azurecontainerapps.io/api/INSERT', param);
       console.log(response.data);
     };
 
     const readData = async () => {
       // 実際のAPI URLに置き換えてください
-      const response = await axios.get('https://m3h-hajime-containerapp.jollyriver-96f47718.japaneast.azurecontainerapps.io/api/SELECT');
+      const response = await axios.get('https://m3h-hajime-vnetendpoint.salmonmushroom-ce85a467.japaneast.azurecontainerapps.io/api/SELECT');
       console.log(response.data);
       dataList.value = response.data.List;
     };
